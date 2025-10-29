@@ -1,0 +1,55 @@
+.visualization {
+  margin-top: 2rem;
+}
+
+.visualization h2 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.visualization-canvas {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  display: block;
+  margin: 0 auto;
+}
+
+.visualization-info {
+  margin-top: 1rem;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.legend-color.original {
+  background: #3b82f6;
+}
+
+.legend-color.transformed {
+  background: #10b981;
+}

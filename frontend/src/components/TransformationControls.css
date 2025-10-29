@@ -1,0 +1,160 @@
+.transformation-controls {
+  margin-bottom: 2rem;
+}
+
+.transformation-controls h2 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.add-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-btn {
+  padding: 0.75rem 1rem;
+  border: 2px solid;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.add-btn.translate {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.add-btn.translate:hover {
+  background: #10b981;
+  color: white;
+}
+
+.add-btn.rotate {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.add-btn.rotate:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.add-btn.scale {
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.add-btn.scale:hover {
+  background: #f59e0b;
+  color: white;
+}
+
+.transformations-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: #94a3b8;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 2px dashed #e2e8f0;
+}
+
+.transform-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.transform-card.translate {
+  border-color: #10b981;
+  background: #f0fdf4;
+}
+
+.transform-card.rotate {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.transform-card.scale {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.transform-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.transform-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.remove-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+}
+
+.param-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.param-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.param-input.full-width {
+  grid-column: span 2;
+}
+
+.param-input label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.25rem;
+}
+
+.param-input input,
+.param-input select {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.param-input input:focus,
+.param-input select:focus {
+  outline: none;
+  border-color: #667eea;
+}
