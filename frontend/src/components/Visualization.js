@@ -19,8 +19,8 @@ const Visualization = ({ originalPoint, transformedPoint }) => {
     const width = canvas.width;
     const height = canvas.height;
 
-    // Clear canvas with white background
-    ctx.fillStyle = '#ffffff';
+    // Clear canvas with light teal background
+    ctx.fillStyle = '#f0fdfa';
     ctx.fillRect(0, 0, width, height);
 
     // Draw red margin border around canvas

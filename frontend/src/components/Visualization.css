@@ -1,15 +1,15 @@
 .visualization {
   margin-top: 2rem;
   padding: 2rem;
-  background: white;
+  background: #ecfdf5;
   border-radius: 12px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid #d1fae5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .section-header {
   padding-bottom: 1rem;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 3px solid #10b981;
   margin-bottom: 1.5rem;
 }
 
@@ -41,8 +41,8 @@
 .control-btn {
   width: 36px;
   height: 36px;
-  border: 2px solid #cbd5e1;
-  background: white;
+  border: 2px solid #a7f3d0;
+  background: #f0fdfa;
   border-radius: 6px;
   font-size: 1.25rem;
   font-weight: bold;
@@ -55,11 +55,11 @@
 }
 
 .control-btn:hover {
-  background: #667eea;
-  border-color: #667eea;
+  background: #10b981;
+  border-color: #10b981;
   color: white;
   transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.4);
 }
 
 .control-btn:active {
@@ -75,7 +75,7 @@
 }
 
 .visualization:fullscreen {
-  background: white;
+  background: #ecfdf5;
   padding: 3rem;
   overflow: auto;
 }
@@ -107,7 +107,7 @@
   height: auto;
   border: 6px solid #ef4444;
   border-radius: 10px;
-  background: #ffffff;
+  background: #f0fdfa;
   display: block;
   margin: 0 auto;
   cursor: grab;
@@ -138,10 +138,10 @@
   color: white;
   font-weight: 500;
   padding: 0.75rem 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #064e3b 100%);
   border-radius: 8px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
   letter-spacing: 0.3px;
 }
 
@@ -155,9 +155,9 @@
   flex-wrap: wrap;
   gap: 2.5rem;
   padding: 1.5rem;
-  background: white;
+  background: #f0fdfa;
   border-radius: 10px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid #d1fae5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 

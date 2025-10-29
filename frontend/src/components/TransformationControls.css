@@ -1,15 +1,15 @@
 .transformation-controls {
   margin-bottom: 2rem;
-  background: white;
+  background: #ecfdf5;
   padding: 1.5rem;
   border-radius: 12px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid #d1fae5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .section-header {
   padding-bottom: 1rem;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 3px solid #10b981;
   margin-bottom: 1.5rem;
 }
 
@@ -40,7 +40,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: white;
+  background: #f0fdfa;
 }
 
 .add-btn.translate {
@@ -174,5 +174,6 @@
 .param-input input:focus,
 .param-input select:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
