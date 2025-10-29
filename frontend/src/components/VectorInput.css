@@ -1,5 +1,23 @@
 .vector-input {
   margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #667eea;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .vector-input h2 {

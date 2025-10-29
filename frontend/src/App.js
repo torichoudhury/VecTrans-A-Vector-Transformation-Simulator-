@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>🔄 VecTrans - Vector Transformation Simulator</h1>
+        <h1>VecTrans - Vector Transformation Simulator</h1>
         <p>Homogeneous Transformation Calculator</p>
       </header>
 
@@ -117,7 +117,7 @@ function App() {
           )}
           {!result && (
             <div className="placeholder">
-              <h3>👈 Configure your transformation</h3>
+              <h3>Configure your transformation</h3>
               <p>Add transformation operations on the left and click "Apply Transformation" to see the results.</p>
             </div>
           )}

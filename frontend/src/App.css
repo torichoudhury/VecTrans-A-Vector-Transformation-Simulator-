@@ -6,20 +6,23 @@
 .App-header {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .App-header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .App-header p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  opacity: 0.95;
+  font-weight: 400;
 }
 
 .container {
@@ -35,8 +38,13 @@
 .right-panel {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 2.5rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
 }
 
 .action-buttons {
@@ -97,11 +105,23 @@
   height: 500px;
   text-align: center;
   color: #64748b;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 2px dashed #cbd5e1;
+  padding: 2rem;
 }
 
 .placeholder h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.placeholder p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 400px;
 }
 
 @media (max-width: 968px) {

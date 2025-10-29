@@ -15,10 +15,10 @@ const TransformationControls = ({
     let newParams;
     if (type === 'rotate') {
       newParams = { ...transform.params };
-      newParams[key] = key === 'angle' ? parseFloat(value) || 0 : value;
+      newParams[key] = key === 'angle' ? (value === '' ? '' : parseFloat(value) || 0) : value;
     } else {
       newParams = [...transform.params];
-      newParams[key] = parseFloat(value) || 0;
+      newParams[key] = value === '' ? '' : parseFloat(value) || 0;
     }
     updateTransformation(id, newParams);
   };
@@ -35,6 +35,7 @@ const TransformationControls = ({
                 value={transform.params[0]}
                 onChange={(e) => handleParamChange(transform.id, 'translate', 0, e.target.value)}
                 step="0.1"
+                placeholder="0.0"
               />
             </div>
             <div className="param-input">
@@ -44,6 +45,7 @@ const TransformationControls = ({
                 value={transform.params[1]}
                 onChange={(e) => handleParamChange(transform.id, 'translate', 1, e.target.value)}
                 step="0.1"
+                placeholder="0.0"
               />
             </div>
             <div className="param-input">
@@ -53,6 +55,7 @@ const TransformationControls = ({
                 value={transform.params[2]}
                 onChange={(e) => handleParamChange(transform.id, 'translate', 2, e.target.value)}
                 step="0.1"
+                placeholder="0.0"
               />
             </div>
           </div>
@@ -79,6 +82,7 @@ const TransformationControls = ({
                 value={transform.params.angle}
                 onChange={(e) => handleParamChange(transform.id, 'rotate', 'angle', e.target.value)}
                 step="1"
+                placeholder="0"
               />
             </div>
           </div>
@@ -94,6 +98,7 @@ const TransformationControls = ({
                 value={transform.params[0]}
                 onChange={(e) => handleParamChange(transform.id, 'scale', 0, e.target.value)}
                 step="0.1"
+                placeholder="1.0"
               />
             </div>
             <div className="param-input">
@@ -103,6 +108,7 @@ const TransformationControls = ({
                 value={transform.params[1]}
                 onChange={(e) => handleParamChange(transform.id, 'scale', 1, e.target.value)}
                 step="0.1"
+                placeholder="1.0"
               />
             </div>
             <div className="param-input">
@@ -112,6 +118,7 @@ const TransformationControls = ({
                 value={transform.params[2]}
                 onChange={(e) => handleParamChange(transform.id, 'scale', 2, e.target.value)}
                 step="0.1"
+                placeholder="1.0"
               />
             </div>
           </div>
@@ -124,16 +131,18 @@ const TransformationControls = ({
 
   const getTransformIcon = (type) => {
     switch (type) {
-      case 'translate': return '↔️';
-      case 'rotate': return '🔄';
-      case 'scale': return '📏';
-      default: return '⚙️';
+      case 'translate': return '↔';
+      case 'rotate': return '↻';
+      case 'scale': return '⊡';
+      default: return '⚙';
     }
   };
 
   return (
     <div className="transformation-controls">
-      <h2>🔧 Transformations</h2>
+      <div className="section-header">
+        <h2>Transformations</h2>
+      </div>
       
       <div className="add-buttons">
         <button 
@@ -166,7 +175,7 @@ const TransformationControls = ({
             <div key={transform.id} className={`transform-card ${transform.type}`}>
               <div className="transform-header">
                 <span className="transform-title">
-                  {getTransformIcon(transform.type)} {transform.type.charAt(0).toUpperCase() + transform.type.slice(1)} #{index + 1}
+                  {getTransformIcon(transform.type)} {transform.type.charAt(0).toUpperCase() + transform.type.slice(1)} {index + 1}
                 </span>
                 <button 
                   className="remove-btn"

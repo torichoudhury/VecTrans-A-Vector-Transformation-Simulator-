@@ -7,8 +7,19 @@ A web-based vector transformation simulator that performs homogeneous transforma
 - **🎯 Vector Input**: Input 3D vectors (x, y, z coordinates)
 - **🔧 Multiple Transformations**: Apply translation, rotation, and scaling transformations
 - **📊 Visual Results**: See transformation matrices and resulting vectors
-- **📐 2D Visualization**: Visual representation of transformations on X-Y plane
+- **📐 Interactive 3D Isometric Visualization**: 
+  - True 3D coordinate system with X, Y, Z axes
+  - Isometric projection for depth perception
+  - 3D grid planes (XY, XZ, YZ)
+  - Projection lines showing point positions
+  - Zoom and pan controls
+  - Hover effects on points with 3D coordinates
+  - Distance measurements in 3D space
+  - Continuous scale markers on all axes
+  - Color-coded axes (Red-X, Green-Y, Blue-Z)
 - **⚡ Real-time Calculation**: Instant computation of homogeneous transformations
+- **🖱️ Interactive Controls**: Mouse wheel zoom, drag to pan, hover for details
+- **🎨 Professional Design**: Bordered canvas, gradient backgrounds, smooth animations
 
 ## What are Homogeneous Transformations?
 
